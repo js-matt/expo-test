@@ -15,15 +15,19 @@ export default function HomeScreen() {
   const [images, setImages] = useState<any[]>([]);
 
   const pickImage = async () => {
-    let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.All,
-      aspect: [4, 3],
-      quality: 1,
-      allowsMultipleSelection: true,
-    });
-
-    if (!result.canceled) {
-      setImages(result.assets);
+    try {
+      const result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ImagePicker.MediaTypeOptions.All,
+        aspect: [4, 3],
+        quality: 1,
+        allowsMultipleSelection: true,
+      });
+  
+      if (!result.cancelled) {
+        setImages(result.selected);
+      }
+    } catch(e) {
+      console.log("Error: ", e)
     }
   };
 

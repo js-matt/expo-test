@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorldApp",
-    "slug": "HelloWorldApp",
+    "name": "HelloWorldAppAppAppApp",
+    "slug": "HelloWorldAppAppAppApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,13 +13,18 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "y"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anonymous.HelloWorldAppAppAppApp"
     },
     "web": {
       "bundler": "metro",

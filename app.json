@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorldAppAppAppApp",
-    "slug": "HelloWorldAppAppAppApp",
+    "name": "HelloWorldApp",
+    "slug": "HelloWorldApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -24,7 +24,7 @@
       "permissions": [
         "android.permission.RECORD_AUDIO"
       ],
-      "package": "com.anonymous.HelloWorldAppAppAppApp"
+      "package": "com.anonymous.HelloWorldApp"
     },
     "web": {
       "bundler": "metro",
